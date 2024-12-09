@@ -1,0 +1,613 @@
+.main_logo_section {
+  background-image: url("../assets/background_section.png");
+  margin-top: 55px;
+  background-size: cover;
+  width: 100vw;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 0px;
+}
+
+.logo_section_left {
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  font-size: 0;
+  width: 50vw;
+}
+
+.left_section_1,
+.left_section_2 {
+  width: 12vw;
+  height: 70vh;
+}
+
+.left_section_31,
+.left_section_32 {
+  width: 9vw;
+  height: 70vh;
+}
+
+.logo_section_rigth {
+  display: flex;
+  flex-direction: column;
+  align-items: space-between;
+  justify-content: space-around;
+  background-image: url("../assets/rigth_main_section.png");
+  background-size: cover;
+  width: 50vw;
+  height: 70vh;
+  margin-right: 7px;
+}
+
+.section_button a {
+  text-decoration: none;
+  font-family: Montserrat;
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 21.94px;
+  text-align: left;
+  text-underline-position: from-font;
+  text-decoration-skip-ink: none;
+  color: #232323;
+  text-shadow: -0.5px -0.5px 0 #000000, 0.5px -0.5px 0 #000000,
+    -0.5px 0.5px 0 #000000, 0.5px 0.5px 0 #000000;
+}
+
+.button_container {
+  position: relative;
+  width: 224px;
+  height: auto;
+  display: inline-block;
+  margin-left: 204px;
+}
+
+.button_image {
+  width: 224px;
+  height: auto;
+  position: relative;
+  z-index: 10;
+}
+
+.button_text {
+  position: absolute;
+  top: 37%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 20;
+  margin-top: 8px;
+}
+
+.button_container::after {
+  content: "";
+  position: absolute;
+  width: 224px;
+  height: 50px;
+  background-color: #fde4f0;
+  border: 1px solid black;
+  top: 15%;
+  left: 6%;
+  z-index: 5;
+}
+
+.array_main {
+  position: absolute;
+  bottom: -25%;
+  left: 30%;
+}
+
+.section_logo_text {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: end;
+}
+
+.section_logo_text h1 {
+  position: relative;
+  margin-top: 150px;
+  font-family: Carter One;
+  font-size: 115px;
+  font-weight: 400;
+  line-height: 162.15px;
+  text-align: left;
+  text-underline-position: from-font;
+  text-decoration-skip-ink: none;
+  color: #ff4e88;
+  text-shadow: 1px 1px 0 #dfb4f1, -1px 1px 0 #dfb4f1, 1px -1px 0 #dfb4f1,
+    -1px -1px 0 #dfb4f1;
+  text-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+}
+
+h1::before,
+h1::after {
+  content: "";
+  position: absolute;
+  background-color: black;
+}
+
+h1::before {
+  bottom: -30px;
+  left: 435px;
+  width: 168px;
+  height: 2px;
+}
+
+h1::after {
+  top: -100px;
+  left: 226px;
+  width: 2px;
+  height: 67px;
+}
+
+/* А ВОТ ТУТ ИДЕТ ДРУГАЯ СЕКЦИЯ КОТОРАЯ ПО ЦЕНТРУ */
+
+.catalog {
+  margin-top: 100px;
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  padding-bottom: 75px;
+}
+
+.item_catalog_decoration {
+  position: absolute;
+  bottom: 0;
+  left: 71px;
+}
+
+.name_section_catalog {
+  margin: 100px 0 0 206px;
+  font-family: Gotham Pro bold;
+  font-size: 59px;
+  font-weight: 900;
+  line-height: 73.99px;
+  text-align: left;
+  text-underline-position: from-font;
+  text-decoration-skip-ink: none;
+}
+
+.name_section_catalog h2 {
+  position: relative;
+  display: inline-block;
+}
+
+.name_section_catalog h2::before,
+.name_section_catalog h2::after {
+  content: "";
+  position: absolute;
+  background-color: black;
+}
+
+.name_section_catalog h2::before {
+  bottom: 50%;
+  right: -100px;
+  width: 67px;
+  height: 2px;
+}
+
+.name_section_catalog h2::after {
+  top: -75px;
+  left: 90px;
+  width: 2px;
+  height: 67px;
+}
+
+.grid_catalog {
+  display: grid;
+  grid-template-areas:
+    "A B C"
+    "D F C"
+    "G H S";
+  grid-gap: 5vw;
+  margin: auto;
+  padding-top: 100px;
+}
+
+.grid_catalog a {
+  text-decoration: none;
+  text-align: left;
+  margin-top: 0;
+  font-family: Montserrat;
+  font-size: 18px;
+  font-weight: 700;
+  line-height: 21.94px;
+  letter-spacing: 0.02em;
+  text-underline-position: from-font;
+  text-decoration-skip-ink: none;
+  color: #000000;
+}
+
+.card {
+  border: 0.4px solid #ededed;
+  display: flex;
+  flex-direction: row; /* Элементы располагаются горизонтально */
+  font-family: "Montserrat", sans-serif;
+  width: 352px;
+  transition: color 0.2s ease;
+}
+
+.card:hover {
+  color: #ff4e88;
+}
+.card .text {
+  padding: 15px;
+  width: 50%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: start;
+}
+
+.card .text h3 {
+  font-size: 12px;
+  line-height: 16px;
+  margin: 0;
+}
+
+.text p {
+  font-size: 10px;
+  line-height: 14px;
+  margin-top: 5px;
+  overflow-wrap: break-word;
+  word-wrap: break-word;
+  color: black;
+  font-family: Montserrat;
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 21.94px;
+  letter-spacing: 0.02em;
+  text-align: left;
+  text-underline-position: from-font;
+  text-decoration-skip-ink: none;
+}
+
+.image_card {
+  flex: 2;
+  overflow: hidden;
+}
+
+.image_card img {
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+}
+
+.A {
+  height: 162px;
+  width: 352px;
+}
+.card img {
+  width: 213px;
+}
+
+.C img {
+  width: 176px;
+}
+
+/* .F img {
+  width: 242px;
+} */
+.A {
+  grid-area: A;
+}
+.B {
+  grid-area: B;
+}
+.C {
+  grid-area: C;
+}
+.D {
+  grid-area: D;
+}
+.F {
+  grid-area: F;
+}
+.G {
+  grid-area: G;
+}
+.H {
+  grid-area: H;
+}
+.S {
+  grid-area: S;
+}
+
+/* А ВОТ ТУТ ИДЕТ ДРУГАЯ СЕКЦИЯ КОТОРАЯ ПО ЦЕНТРУ */
+
+.about {
+  margin-top: 50px;
+  position: relative;
+  width: 100vw;
+  height: 900px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.image_background_top {
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+.image_background_top img {
+  width: 46vw;
+}
+
+.image_background_bottom {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+}
+
+.image_background_bottom img {
+  width: 40vw;
+}
+
+.about_section_text {
+  position: relative;
+  width: 40vw;
+}
+
+.name_about_text {
+  font-family: Gotham Pro bold;
+  font-size: 45px;
+  font-weight: 900;
+  line-height: 63.63px;
+  text-align: left;
+  text-underline-position: from-font;
+  text-decoration-skip-ink: none;
+  position: relative;
+}
+
+.about_section_text img {
+  position: absolute;
+  bottom: -6vw;
+  right: -10vw;
+  width: 20vw;
+}
+
+.text_about {
+  font-family: Montserrat;
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 39.04px;
+  text-align: left;
+  text-underline-position: from-font;
+  text-decoration-skip-ink: none;
+  z-index: 10;
+}
+
+.name_about_text::before,
+.name_about_text::after {
+  content: "";
+  position: absolute;
+  background-color: black;
+}
+
+.name_about_text::before {
+  bottom: 50%;
+  right: 150px;
+  width: 67px;
+  height: 2px;
+}
+
+.name_about_text::after {
+  top: -77px;
+  left: 50px;
+  width: 2px;
+  height: 50px;
+}
+
+.item_about_bottom {
+  position: absolute;
+  bottom: 10vw;
+  right: 5vw;
+}
+
+.item_about_tom {
+  position: absolute;
+  top: -1vw;
+  right: 40vw;
+}
+
+.section_button_about {
+  position: absolute;
+  bottom: 10vw;
+  right: 50vw;
+}
+
+.section_button_about a {
+  text-decoration: none;
+  font-family: Montserrat;
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 21.94px;
+  text-align: left;
+  text-underline-position: from-font;
+  text-decoration-skip-ink: none;
+  color: #232323;
+  text-shadow: -0.5px -0.5px 0 #000000, 0.5px -0.5px 0 #000000,
+    -0.5px 0.5px 0 #000000, 0.5px 0.5px 0 #000000;
+}
+
+.reverse_image {
+  transform: scaleY(-1);
+}
+
+@media screen and (max-width: 1500px) {
+  .logo_section_left {
+    display: none;
+  }
+
+  .logo_section_rigth {
+    width: 100vw;
+    height: 40vh;
+    margin-right: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    padding: 20px;
+  }
+
+  .section_logo_text h1 {
+    margin-top: 0;
+    font-size: 48px;
+    line-height: 60px;
+    text-align: center;
+  }
+
+  .section_button {
+    margin-top: 20px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+  }
+
+  .button_container {
+    margin-left: 0;
+    transform: scale(0.8);
+  }
+
+  .button_text {
+    font-size: 16px;
+  }
+
+  .array_main {
+    display: none;
+  }
+
+  .section_logo_text h1::before,
+  .section_logo_text h1::after {
+    display: none;
+  }
+
+  .name_section_catalog h2::before,
+  .name_section_catalog h2::after {
+    display: none;
+  }
+
+  .name_about_text::before,
+  .name_about_text::after {
+    display: none;
+  }
+
+  .name_section_catalog {
+    font-size: 32px;
+    line-height: 40px;
+  }
+
+  .name_about_text {
+    font-size: 32px;
+    line-height: 40px;
+  }
+
+  .text_about {
+    font-size: 16px;
+    line-height: 24px;
+  }
+
+  .catalog {
+    margin-top: 30px;
+    padding: 0 20px;
+  }
+
+  .name_section_catalog {
+    margin: 0;
+    width: 100%;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+  }
+
+  .name_section_catalog h2 {
+    font-size: 32px;
+    line-height: 40px;
+    margin-bottom: 30px;
+  }
+
+  .grid_catalog {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    padding: 0;
+    margin-top: 30px;
+  }
+
+  .card {
+    width: 100%;
+    height: 120px;
+    flex-direction: row;
+    display: flex;
+    align-items: center;
+  }
+
+  .card .text {
+    padding: 15px;
+    font-size: 16px;
+    line-height: 20px;
+    width: 50%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    overflow-wrap: break-word;
+    word-wrap: break-word;
+  }
+
+  .card .text h3 {
+    font-size: clamp(12px, 4vw, 16px);
+    line-height: 1.2;
+    margin: 0;
+  }
+
+  .text p {
+    font-size: clamp(10px, 3.5vw, 14px);
+    line-height: 1.3;
+    margin-top: 5px;
+    overflow-wrap: break-word;
+    word-wrap: break-word;
+  }
+
+  .image_card {
+    width: 50%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .image_card img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+
+  .text p {
+    font-size: 14px;
+    line-height: 18px;
+    margin-top: 5px;
+  }
+
+  .A,
+  .B,
+  .C,
+  .D,
+  .F,
+  .G {
+    height: 120px;
+    width: 100%;
+  }
+
+  .item_catalog_decoration {
+    display: none;
+  }
+
+  .about {
+    display: none;
+  }
+}

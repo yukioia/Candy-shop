@@ -1,0 +1,213 @@
+.container_contacts {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 40px;
+}
+
+.text_about_contacts {
+  font-family: Gotham Pro;
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 39.04px;
+  text-align: left;
+  text-underline-position: from-font;
+  text-decoration-skip-ink: none;
+  width: 80vw;
+}
+
+.text_about_contacts ul {
+  margin-top: 10px; /* Отступ сверху */
+  margin-bottom: 10px; /* Отступ снизу */
+  padding-left: 40px; /* Отступ слева для списка */
+}
+
+.text_about_contacts ul li {
+  margin-bottom: 8px; /* Отступ между пунктами */
+  line-height: 1.6; /* Увеличенный межстрочный интервал */
+}
+
+.text_about_contacts p a {
+  text-decoration: none;
+  color: black;
+  padding-left: 40px;
+}
+
+.container_contacts_map {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 100px;
+}
+
+.map_container {
+  display: flex;
+  flex-direction: column;
+  width: 70vw;
+}
+
+.map_section {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.text_map_logo {
+  font-family: Gotham Pro bold;
+  font-size: 45px;
+  font-weight: 900;
+  line-height: 56.43px;
+  text-align: left;
+  text-underline-position: from-font;
+  text-decoration-skip-ink: none;
+  margin-bottom: 50px;
+}
+
+.text_map_logo h3 {
+  position: relative;
+}
+
+.text_map_logo h3::before,
+.text_map_logo h3::after {
+  content: "";
+  position: absolute;
+  background-color: black;
+}
+
+.text_map_logo h3::before {
+  bottom: 50%;
+  left: 400px;
+  width: 67px;
+  height: 2px;
+}
+
+.text_map_logo h3::after {
+  top: -77px;
+  left: 50px;
+  width: 2px;
+  height: 50px;
+}
+
+.info_map {
+  display: flex;
+  flex-direction: column;
+  gap: 87px;
+}
+
+.info img {
+  width: 39px;
+}
+
+.info {
+  display: flex;
+  gap: 10px;
+  align-items: center;
+}
+
+.info p {
+  font-family: Gotham Pro;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 20.16px;
+  text-align: left;
+  text-underline-position: from-font;
+  text-decoration-skip-ink: none;
+  width: 300px;
+}
+
+.info span {
+  display: inline-block;
+  width: 2px; /* Толщина линии */
+  height: 30px; /* Высота линии, можно настроить */
+  background-color: #000; /* Цвет линии */
+  margin: 0 15px; /* Отступы слева и справа */
+}
+
+@media screen and (max-width: 1500px) {
+  .container_contacts {
+    margin-top: 20px;
+  }
+
+  .text_about_contacts {
+    font-size: 16px;
+    line-height: 28px;
+    width: 90vw;
+    padding: 0 15px;
+  }
+
+  .text_about_contacts ul {
+    margin-top: 15px;
+    margin-bottom: 15px;
+    padding-left: 20px;
+  }
+
+  .text_about_contacts p a {
+    padding-left: 20px;
+  }
+
+  .container_contacts_map {
+    margin-top: 50px;
+  }
+
+  .map_container {
+    width: 90vw;
+  }
+
+  .map_section {
+    flex-direction: column;
+    gap: 30px;
+  }
+
+  .text_map_logo {
+    font-size: 28px;
+    line-height: 36px;
+    margin-bottom: 30px;
+    text-align: center;
+    width: 100%;
+  }
+
+  .text_map_logo h3::before {
+    display: none;
+  }
+
+  .text_map_logo h3::after {
+    display: none;
+  }
+
+  .info_map {
+    gap: 30px;
+    width: 100%;
+  }
+
+  .info {
+    flex-direction: column;
+    text-align: center;
+    gap: 15px;
+  }
+
+  .info p {
+    font-size: 14px;
+    line-height: 20px;
+    width: 100%;
+    text-align: center;
+  }
+
+  .info span {
+    width: 30px;
+    height: 2px;
+    margin: 10px 0;
+  }
+
+  .info img {
+    width: 30px;
+  }
+
+  .map iframe {
+    width: 100% !important;
+    height: 300px !important;
+  }
+
+  .map {
+    width: 100%;
+  }
+}
